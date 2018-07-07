@@ -155,3 +155,8 @@ public class UserController {
 因此，在构建RESTful API的同时，加入swagger来对API文档进行管理，是个不错的选择。
 
 完整结果示例可查看Chapter3-1-5。
+
+--------------------
+https://github.com/SpringForAll/spring-boot-starter-swagger
+简介
+该项目主要利用Spring Boot的自动化配置特性来实现快速的将swagger2引入spring boot应用来生成API文档，简化原生使用swagger2的整合代码
