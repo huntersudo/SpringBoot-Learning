@@ -197,6 +197,7 @@ public class ApplicationTests {
 
 }
 ```
+
 当然spring-data-redis中提供的数据操作远不止这些，本文仅作为在Spring Boot中使用redis时的配置参考，
 更多对于redis的操作使用，请参考Spring-data-redis Reference
 https://docs.spring.io/spring-data/redis/docs/2.1.x/reference/html/
