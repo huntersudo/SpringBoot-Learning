@@ -15,7 +15,7 @@ public String hello() throws Exception {
 ```
 此时，可以看到类似下面的报错页面，该页面就是Spring Boot提供的默认error映射页面。
 
-![avatar](chapter-3-1-6-error1.png)
+![avatar](img/chapter-3-1-6-error1.png)
 
 ## 统一异常处理
 虽然，Spring Boot中实现了默认的error映射，但是在实际应用中，上面你的错误页面对用户来说并不够友好，我们通常需要去实现我们自己的异常提示。
@@ -61,7 +61,7 @@ class GlobalExceptionHandler {
 ```
 启动该应用，访问：http://localhost:8080/hello，可以看到如下错误提示页面。
 
-![avatar](chapter-3-1-6-error2.png)
+![avatar](img/chapter-3-1-6-error2.png)
 
 通过实现上述内容之后，我们只需要在Controller中抛出Exception，当然我们可能会有多种不同的Exception。
 然后在@ControllerAdvice类中，根据抛出的具体Exception类型匹配@ExceptionHandler中配置的异常类型来匹配错误映射和处理。

@@ -20,7 +20,7 @@ Spring Boot中使用Swagger2构建强大的RESTful API文档
 可以让我们在修改代码逻辑的同时方便的修改文档说明。另外Swagger2也提供了强大的页面测试功能来调试每个RESTful API。
 具体效果如下图所示：
 
-![avatar](chapter-3-1-5-swagger2_1.png)
+![avatar](img/chapter-3-1-5-swagger2_1.png)
 
 下面来具体介绍，如果在Spring Boot中使用Swagger2。首先，我们需要一个Spring Boot实现的RESTful API工程，若您没有做过这类内容，建议先阅读
 Spring Boot构建一个较为复杂的RESTful APIs和单元测试。
@@ -141,7 +141,7 @@ public class UserController {
 
 就能看到前文所展示的RESTful API的页面。我们可以再点开具体的API请求，以POST类型的/users请求为例，可找到上述代码中我们配置的Notes信息以及参数user的描述信息，如下图所示。
 
-![avatar](chapter-3-1-5-swagger2_2.png)
+![avatar](img/chapter-3-1-5-swagger2_2.png)
 
 ## API文档访问与调试
 

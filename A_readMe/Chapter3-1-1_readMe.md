@@ -12,7 +12,7 @@
 配合注释详细说明在Spring MVC中如何映射HTTP请求、如何传参、如何编写单元测试。
 
 RESTful API具体设计如下：
-![avatar](chapter3-1-1.jpg)
+![avatar](img/chapter3-1-1.jpg)
 
 User实体定义：
 
