@@ -22,7 +22,7 @@ Spring Boot的基础结构共三个文件（具体路径根据用户生成项目
 
 创建package命名为com.didispace.web（根据实际情况修改）  
 创建HelloController类，内容如下  
-```$xslt
+```java
 
 @RestController
 public class HelloController {
@@ -41,7 +41,7 @@ public class HelloController {
 
 打开的src/test/下的测试入口Chapter1ApplicationTests类。下面编写一个简单的单元测试来模拟http请求，具体如下：  
 
-```$xslt
+```java
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = MockServletContext.class)
 @WebAppConfiguration
@@ -69,10 +69,8 @@ public class Chapter1ApplicationTests {
 
 注意引入下面内容，让status、content、equalTo函数可用  
 
-````$xslt
+```java
 import static org.hamcrest.Matchers.equalTo;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
-
 ````

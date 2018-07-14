@@ -15,9 +15,10 @@ pom.xml中引入依赖
 - 这里用到spring-boot-starter基础和spring-boot-starter-test用来做单元测试验证数据访问
 - 引入连接mysql的必要依赖mysql-connector-java
 - 引入整合MyBatis的核心依赖mybatis-spring-boot-starter
+
 这里不引入spring-boot-starter-jdbc依赖，是由于mybatis-spring-boot-starter中已经包含了此依赖
 
-```
+```java 
 <parent>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-parent</artifactId>
@@ -56,10 +57,12 @@ pom.xml中引入依赖
 同之前介绍的使用jdbc和spring-data连接数据库一样，在application.properties中配置mysql的连接配置
 
 ```
+
 spring.datasource.url=jdbc:mysql://localhost:3306/test
 spring.datasource.username=root
 spring.datasource.password=123456
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
 ```
 同其他Spring Boot工程一样，简单且简洁的的完成了基本配置，下面看看如何在这个基础下轻松方便的使用MyBatis访问数据库。
 
