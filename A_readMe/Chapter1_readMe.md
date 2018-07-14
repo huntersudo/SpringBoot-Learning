@@ -1,5 +1,7 @@
 # 引入web模块，完成一个简单的RESTful API
 
+[TOC]
+
 ## 结构
 
 Spring Boot的基础结构共三个文件（具体路径根据用户生成项目时填写的Group所有差异）：  
@@ -22,6 +24,7 @@ Spring Boot的基础结构共三个文件（具体路径根据用户生成项目
 
 创建package命名为com.didispace.web（根据实际情况修改）  
 创建HelloController类，内容如下  
+
 ```java
 
 @RestController
